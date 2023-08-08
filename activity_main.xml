@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="56dp"
+        android:background="#9FE2BF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="42dp"
+        android:background="#9FE2BF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsub" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="56dp"
+        android:background="#9FE2BF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnmulty"
+        android:layout_width="114dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="67dp"
+        android:onClick="Multiply"
+        android:text="Multiply"
+        app:layout_constraintEnd_toStartOf="@+id/btnadd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="114dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="47dp"
+        android:onClick="Add"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="114dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="67dp"
+        android:onClick="sub"
+        android:text="Sub"
+        app:layout_constraintEnd_toStartOf="@+id/btndiv"
+        app:layout_constraintTop_toBottomOf="@+id/btnmulty" />
+
+    <Button
+        android:id="@+id/btndiv"
+        android:layout_width="114dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="47dp"
+        android:onClick="div"
+        android:text="Division"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnadd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
